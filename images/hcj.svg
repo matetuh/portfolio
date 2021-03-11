@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="430" viewBox="0 0 430 430">
+  <g id="hcj" transform="translate(-162 -2287)">
+    <g id="Ellipse_32" data-name="Ellipse 32" transform="translate(162 2287)" fill="#ffff03" stroke="#ffff03" stroke-width="10">
+      <circle cx="215" cy="215" r="215" stroke="none"/>
+      <circle cx="215" cy="215" r="210" fill="none"/>
+    </g>
+    <g id="hcj-2" data-name="hcj" transform="translate(-32 -10.662)">
+      <path id="Icon_ionic-logo-html5" data-name="Icon ionic-logo-html5" d="M4.5,2.25l6.447,74.4,28.94,8.264L68.9,76.642,75.359,2.25ZM61.334,26.608H27.381l.736,9.411H60.6L58.1,63.954,39.928,69.138l-18.21-5.162-1.248-14.3h8.9l.632,7.25,9.922,2.728L49.786,56.9l1.029-11.838H20l-2.32-27.6,44.432,0Z" transform="translate(286.2 2438)" fill="#023047"/>
+      <g id="Icon_ionic-logo-css3" data-name="Icon ionic-logo-css3" transform="translate(457.087 2440.25)">
+        <path id="Path_24" data-name="Path 24" d="M-5.605,17.12Z" transform="translate(41.087 39.62)" fill="#023047"/>
+        <path id="Path_25" data-name="Path 25" d="M-19.125-4.5l6.449,74.405,28.938,8.263L45.28,69.893,51.734-4.5ZM34.513,57.3l-18.2,5.19L-1.851,57.275-3.1,42.924h8.9l.633,7.3,9.888,2.8.024.05h.006l9.866-2.741L27.262,38.5H6.524l-.738-9.226H28.049l.811-9.411H-5.1l-.738-9.042H38.555Z" transform="translate(19.125 4.5)" fill="#023047"/>
+      </g>
+      <g id="Icon_ionic-logo-javascript" data-name="Icon ionic-logo-javascript" transform="translate(367.464 2554.083)">
+        <path id="Path_26" data-name="Path 26" d="M7.727,2.813H-7.035V42.024c0,9.7-3.327,12.412-9.118,12.412a22.058,22.058,0,0,1-7.058-1.119L-24.75,64.8A35,35,0,0,0-14.618,66.29c13.295,0,22.345-6.25,22.345-24.169V2.813Z" transform="translate(24.75 -1.336)" fill="#023047"/>
+        <path id="Path_27" data-name="Path 27" d="M14.336,2.25C.046,2.25-9,10.369-9,21.1c0,9.242,6.966,15.028,17.095,18.76,7.326,2.613,10.221,4.947,10.221,8.772,0,4.2-3.347,6.906-9.678,6.906A32.006,32.006,0,0,1-6.2,51.616v0L-9,63.278C-5.561,65.241.861,67.2,7.823,67.2c16.734,0,24.511-8.959,24.511-19.5,0-8.959-4.975-14.744-15.736-18.852C8.638,25.672,5.292,23.9,5.292,19.887c0-3.174,2.895-6.065,8.865-6.065a25.529,25.529,0,0,1,12.272,3.191L29.959,5.2A38.013,38.013,0,0,0,14.336,2.25Z" transform="translate(50.334 -2.25)" fill="#023047"/>
+      </g>
+    </g>
+  </g>
+</svg>

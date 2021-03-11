@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="217.005" height="864.021" viewBox="0 0 217.005 864.021">
+  <g id="four-dots-full-color" transform="translate(0 -99.002)">
+    <g id="Group_4" data-name="Group 4" transform="translate(0 1080.026) rotate(-90)">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="108.003" cy="108.003" r="108.003" transform="translate(117.003 1)" fill="#219ebc"/>
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="108.003" cy="108.003" r="108.003" transform="translate(333.008 0)" fill="#fb8500"/>
+      <circle id="Ellipse_3" data-name="Ellipse 3" cx="108.003" cy="108.003" r="108.003" transform="translate(549.013 1)" fill="#219ebc"/>
+      <circle id="Ellipse_4" data-name="Ellipse 4" cx="108.003" cy="108.003" r="108.003" transform="translate(765.018 0)" fill="#ffff03"/>
+    </g>
+  </g>
+</svg>

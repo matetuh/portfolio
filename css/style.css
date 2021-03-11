@@ -1,0 +1,153 @@
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-containter {
+  background-color: #fff;
+}
+
+.p-blue {
+  color: #219ebc;
+}
+
+.p-yellow {
+  color: #ffff03;
+}
+
+a svg {
+  width: 50%;
+  margin: 0;
+  margin-top: -2em;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul a {
+  padding: 0 1em;
+}
+
+.social-header,
+.content-right {
+  display: none;
+}
+
+.hero {
+  color: #023047;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3em;
+  padding-top: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content-left {
+  text-align: center;
+}
+
+h1 {
+  color: #023047;
+}
+
+h4 {
+  color: #fb8500;
+}
+
+.vl {
+  display: none;
+  color: #219ebc;
+  border-left: 4px solid;
+  height: 10em;
+  position: absolute;
+  left: 2em;
+  top: 25%;
+}
+
+.vp {
+  display: none;
+  color: #023047;
+  font-size: 2em;
+  font-weight: bold;
+  writing-mode: tb-rl;
+  -webkit-writing-mode: tb-rl;
+  -ms-writing-mode: tb-rl;
+  margin-left: -1em;
+}
+
+.button-down img {
+  width: 2.5em;
+}
+
+.contact {
+  background-color: #023047;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-background {
+  padding: 3em;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact .text {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.contact .text h1 {
+  color: #ffff03;
+  display: inline-block;
+  font-size: 6.5vw;
+  padding: 1em;
+  margin-top: -0.5em;
+  letter-spacing: 0.4em;
+  text-align: center;
+}
+
+.contact .text h1 a {
+  color: #fb8500;
+}
+/*# sourceMappingURL=style.css.map */
