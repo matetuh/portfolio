@@ -173,13 +173,14 @@ h4 {
   }
   border-radius: 1em;
   h4 {
+    font-size: 0.9em;
     margin-top: -0.5em;
     color: $dark-blue;
     text-transform: uppercase;
   }
 
   p {
-    font-size: 0.8em;
+    font-size: 0.7em;
     padding: 1em 4em;
     margin-top: -1.5em;
     color: $light-blue;
@@ -218,11 +219,14 @@ h4 {
 
     h1 {
       margin-top: -0.5em;
+      font-size: 1.5em;
     }
 
     h4 {
+      color: $orange;
       font-size: 0.8em;
       margin-top: 0;
+      text-transform: uppercase;
     }
   }
 
@@ -267,7 +271,7 @@ h4 {
 
 footer {
   background-color: $dark-blue;
-  margin-top: 6em;
+  margin-top: 3em;
   position: relative;
   height: 25%;
 
@@ -277,7 +281,7 @@ footer {
     margin: 0;
     padding: 1em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 40%;
     z-index: 10;
   }
@@ -286,10 +290,58 @@ footer {
     color: $light-blue;
     font-size: 0.8em;
   }
+}
 
-  img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.footer-img {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 800px) {
+  header {
+    width: 70%;
+    height: 100%;
+  }
+
+  .social-header {
+    width: 30%;
+    ul {
+      display: flex;
+    }
+  }
+
+  .hero {
+    display: flex;
+    height: 100%;
+  }
+
+  .content-right {
+    display: block;
+    width: 30%;
+    height: 100%;
+    background-color: $light-blue;
+    position: relative;
+    svg {
+      position: absolute;
+      height: 30%;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .content-left {
+    display: block;
+    width: 60%;
+  }
+
+  .vl {
+    display: block;
+  }
+
+  .vp {
+    display: block;
   }
 }
