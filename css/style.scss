@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-family: "Poppins";
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 ul {
@@ -292,6 +293,7 @@ footer {
     overflow: hidden;
     width: 100vw;
     height: 6em;
+    position: relative;
   }
 
   a {
@@ -304,9 +306,9 @@ footer {
 
   header {
     display: flex;
-    width: 100%;
+    width: 66%;
     height: 100%;
-    z-index: 10;
+    z-index: 0;
     justify-content: space-between;
     align-content: center;
 
@@ -322,24 +324,23 @@ footer {
     }
   }
 
-  .p-yellow {
-    color: $yellow;
-  }
-
   .social-header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: auto;
-    width: 20em;
+    width: 25%;
+    margin-left: 2em;
     background-color: $light-blue;
-    z-index: 10;
+
     ul {
       display: flex;
       li {
         padding: 0.5em;
         img {
           width: 50%;
+          position: relative;
+          z-index: 10;
         }
 
         .dribbble {
@@ -350,45 +351,37 @@ footer {
   }
 
   .hero {
-    width: 100vw;
-    height: 45vh;
     display: flex;
-    padding: 0;
+    height: 60%;
+    width: 100vw;
     position: relative;
   }
 
   .content-right {
     display: block;
-    width: 13.5em;
-    height: 100%;
+    width: 30%;
+    height: 110%;
     background-color: $light-blue;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 0;
+
     svg {
-      height: 122.6%;
       position: absolute;
-      top: -22.5%;
-      right: -11em;
+      z-index: 5;
+      height: 120%;
+      top: -18%;
+      right: 0;
     }
   }
 
   .content-left {
-    background-color: $white;
-    height: 100%;
     width: 100%;
     position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
     .content {
-      position: absolute;
-      display: block;
-      width: 22em;
-      height: 50%;
-      left: 5vw;
-      top: 2vh;
       text-align: justify;
+      width: 60%;
       h1 {
-        margin-top: 0.5em;
         font-size: 2.5em;
         margin-left: 2.5em;
       }
@@ -406,7 +399,7 @@ footer {
     z-index: 10;
     position: absolute;
     left: 4em;
-    top: 12vh;
+    top: 35%;
   }
 
   .button-down {
@@ -426,80 +419,115 @@ footer {
     -webkit-writing-mode: tb-rl;
     -ms-writing-mode: tb-rl;
     position: absolute;
-    top: 3vh;
+    top: 18%;
     left: -0.4em;
   }
 
   .contact {
+    position: relative;
+    z-index: 8;
+    .contact-background {
+      position: relative;
+      z-index: 0;
+    }
     .text {
-      .vl-contact {
-        color: $yellow;
-      }
-      .vp-contact {
-        color: $light-blue;
-      }
-      .vp-small {
-        color: $yellow;
-        font-size: 1em;
-        right: 1em;
-      }
       h1 {
         margin-top: -1em;
+        a {
+          position: relative;
+          z-index: 10;
+        }
       }
     }
   }
-}
-
-@media only screen and (min-width: 900px) {
-  .content-right {
-    width: 14em;
-    svg {
-      right: -11em;
-    }
+  .vl-contact {
+    color: $yellow;
+    top: 25%;
+    height: 19em;
   }
-}
-
-@media only screen and (min-width: 1000px) {
-  .content-right {
-    width: 14.5em;
-    svg {
-      right: -10.5em;
-    }
+  .vp-contact {
+    color: $light-blue;
+    top: 6%;
   }
-}
-
-@media only screen and (min-width: 1100px) {
-  .content-right {
-    width: 15em;
-    svg {
-      right: -10em;
-    }
+  .vp-small {
+    color: $yellow;
+    font-size: 1em;
+    right: 1em;
   }
-}
 
-@media only screen and (min-width: 1250px) {
-  .content-right {
-    width: 15.5em;
+  .project {
+    padding: 2em 0;
+    margin: 2em 0;
+    position: relative;
 
-    svg {
-      right: -9.5em;
-    }
-  }
-  .contact {
-    .text {
-      h1 {
-        margin-top: -1.2em;
+    .right {
+      svg {
+        position: absolute;
+        right: -3%;
+        top: 0;
+        height: 100%;
+        z-index: -1;
+      }
+      .vp {
+        color: $orange;
+        right: 5%;
+      }
+
+      .description {
+        width: 50%;
+        margin: 0 auto;
       }
     }
+
+    .left {
+      a {
+        width: 100%;
+        img {
+          border-radius: 0;
+          position: relative;
+          z-index: 10;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -ms-border-radius: 0;
+          -o-border-radius: 0;
+        }
+      }
+      .vl {
+        height: 55%;
+        top: 40%;
+        left: 5em;
+      }
+
+      .vp {
+        left: 0em;
+      }
+    }
+
+    .svg-left {
+      position: absolute;
+      left: -13%;
+    }
   }
-}
-
-@media only screen and (min-width: 1450px) {
-  .content-right {
-    width: 16em;
-
-    svg {
-      right: -9em;
+  .dark-blue {
+    position: relative;
+    z-index: 0;
+    background-color: $dark-blue;
+    .vp {
+      color: $yellow;
+    }
+    p {
+      color: white;
+    }
+    h1 {
+      color: yellow;
+    }
+    .svg-left {
+      z-index: 10;
+    }
+    .right {
+      .vp-small {
+        color: $yellow;
+      }
     }
   }
 }

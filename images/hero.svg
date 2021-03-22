@@ -1,23 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="853.773" height="1073.026" viewBox="0 0 853.773 1073.026">
-  <g id="hero" transform="translate(-831.227 0.026)">
+<svg xmlns="http://www.w3.org/2000/svg" width="589.275" height="1386.215" viewBox="0 0 589.275 1386.215">
+  <g id="hero" transform="translate(-1095.725 -1.785)">
+    <rect id="Rectangle_36" data-name="Rectangle 36" width="261" height="1386" transform="translate(1424 2)" fill="#219ebc"/>
     <g id="Group_3" data-name="Group 3" transform="translate(1095.725 -0.026)">
       <g id="Group_4" data-name="Group 4" transform="translate(0 1073.026) rotate(-90)">
+        <circle id="Ellipse_47" data-name="Ellipse 47" cx="108.003" cy="108.003" r="108.003" transform="translate(-99.09 1)" fill="#fb8500"/>
+        <circle id="Ellipse_48" data-name="Ellipse 48" cx="108.003" cy="108.003" r="108.003" transform="translate(-207 109.502)" fill="#023047"/>
         <circle id="Ellipse_1" data-name="Ellipse 1" cx="108.003" cy="108.003" r="108.003" transform="translate(117.003 1)" fill="#023047"/>
         <circle id="Ellipse_2" data-name="Ellipse 2" cx="108.003" cy="108.003" r="108.003" transform="translate(328.699)" fill="#fb8500"/>
         <circle id="Ellipse_3" data-name="Ellipse 3" cx="108.003" cy="108.003" r="108.003" transform="translate(541.91 1)" fill="#219ebc"/>
-        <circle id="Ellipse_4" data-name="Ellipse 4" cx="108.003" cy="108.003" r="108.003" transform="translate(758.66)" fill="#ffff03"/>
+        <circle id="Ellipse_4" data-name="Ellipse 4" cx="108.003" cy="108.003" r="108.003" transform="translate(758.66)" fill="#fb8500"/>
         <circle id="Ellipse_5" data-name="Ellipse 5" cx="108.003" cy="108.003" r="108.003" transform="translate(639.631 108.502)" fill="#023047"/>
         <circle id="Ellipse_6" data-name="Ellipse 6" cx="108.003" cy="108.003" r="108.003" transform="translate(0 108.502)" fill="#ffff03"/>
         <circle id="Ellipse_7" data-name="Ellipse 7" cx="108.003" cy="108.003" r="108.003" transform="translate(213.21 108.502)" fill="#219ebc"/>
         <circle id="Ellipse_8" data-name="Ellipse 8" cx="108.003" cy="108.003" r="108.003" transform="translate(426.421 108.502)" fill="#ffff03"/>
-        <circle id="Ellipse_10" data-name="Ellipse 10" cx="105.503" cy="105.503" r="105.503" transform="translate(862.021 -264.498)" fill="#219ebc"/>
         <circle id="Ellipse_11" data-name="Ellipse 11" cx="108.003" cy="108.003" r="108.003" transform="translate(117.003 216.804)" fill="#023047"/>
         <circle id="Ellipse_12" data-name="Ellipse 12" cx="108.003" cy="108.003" r="108.003" transform="translate(328.699 216.804)" fill="#fb8500"/>
         <circle id="Ellipse_13" data-name="Ellipse 13" cx="108.003" cy="108.003" r="108.003" transform="translate(543.91 216.804)" fill="#219ebc"/>
-        <path id="Path_21" data-name="Path 21" d="M108,0A108,108,0,1,1,0,108,108,108,0,0,1,108,0Z" transform="translate(758.66 216.804)" fill="#ffff03"/>
+        <path id="Path_52" data-name="Path 52" d="M108,0A108,108,0,1,1,0,108,108,108,0,0,1,108,0Z" transform="translate(974.665 431.809) rotate(180)" fill="#ffff03"/>
+        <circle id="Ellipse_46" data-name="Ellipse 46" cx="108.003" cy="108.003" r="108.003" transform="translate(-315 217.502)" fill="#219ebc"/>
+        <circle id="Ellipse_44" data-name="Ellipse 44" cx="108.003" cy="108.003" r="108.003" transform="translate(-99.301 216.804)" fill="#fb8500"/>
       </g>
     </g>
-    <rect id="Rectangle_7" data-name="Rectangle 7" width="373" height="211" transform="translate(1312 646)" fill="#219ebc"/>
-    <rect id="Rectangle_11" data-name="Rectangle 11" width="613" height="211" transform="translate(940)" fill="#219ebc"/>
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="373" height="213" transform="translate(1312 647)" fill="#219ebc"/>
+    <path id="Path_54" data-name="Path 54" d="M0,0H373V216H0Z" transform="translate(1312 2)" fill="#219ebc"/>
+    <circle id="Ellipse_42" data-name="Ellipse 42" cx="108.003" cy="108.003" r="108.003" transform="translate(1204.227 217.79) rotate(-90)" fill="#219ebc"/>
   </g>
 </svg>
