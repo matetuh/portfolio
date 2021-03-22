@@ -224,6 +224,7 @@ h4 {
   display: flex;
   justify-content: center;
   padding: 0.5em;
+  margin-bottom: 1em;
 
   &-me {
     padding: 0 1em;
@@ -284,6 +285,11 @@ footer {
 
 .vp,
 .vl {
+  display: none;
+}
+
+.svg-right,
+.svg-left {
   display: none;
 }
 
@@ -455,9 +461,8 @@ footer {
     right: 1em;
   }
 
-  .project {
-    padding: 2em 0;
-    margin: 2em 0;
+  .about .project {
+    padding-bottom: 2em;
     position: relative;
 
     .right {
@@ -474,32 +479,54 @@ footer {
       }
 
       .description {
-        width: 50%;
+        display: block;
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        width: 30%;
         margin: 0 auto;
+        text-align: justify;
       }
     }
 
     .left {
+      height: 60vh;
+      position: relative;
       a {
-        width: 100%;
+        margin-left: -5%;
+        width: 75%;
         img {
-          border-radius: 0;
           position: relative;
+          border-radius: 0;
           z-index: 10;
-          -webkit-border-radius: 0;
-          -moz-border-radius: 0;
-          -ms-border-radius: 0;
-          -o-border-radius: 0;
+          margin-bottom: 3em;
         }
+      }
+      h4 {
+        text-align: left;
+        margin-left: 11%;
+        margin-bottom: 5%;
+      }
+
+      h1 {
+        position: absolute;
+        z-index: 20;
+        top: 70%;
+        font-size: 5em;
+        right: 20%;
+        color: $dark-blue;
+        text-align: right;
+        line-height: 1.1;
+        letter-spacing: 0.1em;
       }
       .vl {
         height: 55%;
-        top: 40%;
-        left: 5em;
+        top: 35%;
+        left: 3.5em;
       }
 
       .vp {
-        left: 0em;
+        left: -0.5em;
       }
     }
 
@@ -518,8 +545,10 @@ footer {
     p {
       color: white;
     }
-    h1 {
-      color: yellow;
+    .left {
+      .yellow {
+        color: $yellow;
+      }
     }
     .svg-left {
       z-index: 10;
@@ -529,5 +558,47 @@ footer {
         color: $yellow;
       }
     }
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  footer {
+    height: 35%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  footer {
+    background-color: $dark-blue;
+    margin-top: 3em;
+    position: relative;
+    height: 25%;
+
+    ul {
+      position: absolute;
+      list-style-type: none;
+      margin-left: 0.5em;
+      padding: 1em;
+      display: flex;
+      justify-content: space-evenly;
+      width: 40%;
+      z-index: 10;
+      li {
+        padding: 0 0.5em;
+      }
+    }
+
+    a {
+      color: $light-blue;
+      font-size: 0.8em;
+    }
+  }
+
+  .footer-img {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }

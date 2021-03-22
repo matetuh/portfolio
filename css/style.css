@@ -240,6 +240,7 @@ h4 {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0.5em;
+  margin-bottom: 1em;
 }
 
 .hire-me {
@@ -302,6 +303,11 @@ footer a {
 
 .vp,
 .vl {
+  display: none;
+}
+
+.svg-right,
+.svg-left {
   display: none;
 }
 
@@ -477,47 +483,69 @@ footer a {
     font-size: 1em;
     right: 1em;
   }
-  .project {
-    padding: 2em 0;
-    margin: 2em 0;
+  .about .project {
+    padding-bottom: 2em;
     position: relative;
   }
-  .project .right svg {
+  .about .project .right svg {
     position: absolute;
     right: -3%;
     top: 0;
     height: 100%;
     z-index: -1;
   }
-  .project .right .vp {
+  .about .project .right .vp {
     color: #fb8500;
     right: 5%;
   }
-  .project .right .description {
-    width: 50%;
+  .about .project .right .description {
+    display: block;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 30%;
     margin: 0 auto;
+    text-align: justify;
   }
-  .project .left a {
-    width: 100%;
-  }
-  .project .left a img {
-    border-radius: 0;
+  .about .project .left {
+    height: 60vh;
     position: relative;
+  }
+  .about .project .left a {
+    margin-left: -5%;
+    width: 75%;
+  }
+  .about .project .left a img {
+    position: relative;
+    border-radius: 0;
     z-index: 10;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
+    margin-bottom: 3em;
   }
-  .project .left .vl {
+  .about .project .left h4 {
+    text-align: left;
+    margin-left: 11%;
+    margin-bottom: 5%;
+  }
+  .about .project .left h1 {
+    position: absolute;
+    z-index: 20;
+    top: 70%;
+    font-size: 5em;
+    right: 20%;
+    color: #023047;
+    text-align: right;
+    line-height: 1.1;
+    letter-spacing: 0.1em;
+  }
+  .about .project .left .vl {
     height: 55%;
-    top: 40%;
-    left: 5em;
+    top: 35%;
+    left: 3.5em;
   }
-  .project .left .vp {
-    left: 0em;
+  .about .project .left .vp {
+    left: -0.5em;
   }
-  .project .svg-left {
+  .about .project .svg-left {
     position: absolute;
     left: -13%;
   }
@@ -532,14 +560,57 @@ footer a {
   .dark-blue p {
     color: white;
   }
-  .dark-blue h1 {
-    color: yellow;
+  .dark-blue .left .yellow {
+    color: #ffff03;
   }
   .dark-blue .svg-left {
     z-index: 10;
   }
   .dark-blue .right .vp-small {
     color: #ffff03;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  footer {
+    height: 35%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  footer {
+    background-color: #023047;
+    margin-top: 3em;
+    position: relative;
+    height: 25%;
+  }
+  footer ul {
+    position: absolute;
+    list-style-type: none;
+    margin-left: 0.5em;
+    padding: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 40%;
+    z-index: 10;
+  }
+  footer ul li {
+    padding: 0 0.5em;
+  }
+  footer a {
+    color: #219ebc;
+    font-size: 0.8em;
+  }
+  .footer-img {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
