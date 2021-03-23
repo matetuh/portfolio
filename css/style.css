@@ -241,6 +241,8 @@ h4 {
           justify-content: center;
   padding: 0.5em;
   margin-bottom: 1em;
+  position: relative;
+  z-index: 10;
 }
 
 .hire-me {
@@ -316,8 +318,6 @@ footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    overflow: hidden;
-    width: 100vw;
     height: 6em;
     position: relative;
   }
@@ -349,6 +349,25 @@ footer a {
     padding: 0 1em;
     font-size: 0.8em;
   }
+  body {
+    position: relative;
+  }
+  body .svg-social {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    left: -7em;
+    top: 0;
+    z-index: 9;
+    overflow: hidden;
+  }
+  body .svg-social .svg-hero {
+    position: absolute;
+    height: 85%;
+    z-index: 9;
+    width: auto;
+  }
   .social-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -360,9 +379,9 @@ footer a {
         -ms-flex-align: center;
             align-items: center;
     height: auto;
-    width: 25%;
-    margin-left: 2em;
     background-color: #219ebc;
+    width: 34%;
+    position: relative;
   }
   .social-header ul {
     display: -webkit-box;
@@ -381,42 +400,30 @@ footer a {
     margin-top: -0.25em;
   }
   .hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 60%;
+    display: block;
+    height: 50vh;
     width: 100vw;
     position: relative;
   }
   .content-right {
-    display: block;
-    width: 30%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
     background-color: #219ebc;
-  }
-  .content-right svg {
-    position: absolute;
-    z-index: 5;
-    height: 120%;
-    top: -18%;
-    right: 0;
+    padding: 0;
   }
   .content-left {
-    width: 100%;
-    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 66%;
+    position: relative;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .content-left .content {
-    text-align: justify;
     width: 60%;
+    text-align: justify;
   }
   .content-left .content h1 {
     font-size: 2.5em;
@@ -456,7 +463,7 @@ footer a {
   }
   .contact {
     position: relative;
-    z-index: 8;
+    z-index: 9;
   }
   .contact .contact-background {
     position: relative;
@@ -483,50 +490,101 @@ footer a {
     font-size: 1em;
     right: 1em;
   }
-  .about .project {
+  .dark-blue-div {
+    display: block;
+    width: 100%;
+    height: 20vh;
+    background-color: #023047;
+  }
+  .about {
+    position: relative;
+    background-color: #219ebc;
+    width: 100%;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .col {
+    display: inline-block;
+    width: 40%;
+    height: 50%;
+    text-align: center;
+    background-color: #219ebc;
+    margin: 1em auto;
+  }
+  .col img {
+    margin-top: -6em;
+    z-index: 10;
+    width: 50%;
+    padding: 0.5em;
+  }
+  .col h4 {
+    font-size: 0.9em;
+    margin-top: -0.5em;
+    color: #023047;
+    text-transform: uppercase;
+  }
+  .col p {
+    font-size: 0.7em;
+    padding: 2em 4em;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: -1.5em;
+    color: #ffff03;
+    text-align: left;
+  }
+  .project {
     padding-bottom: 2em;
     position: relative;
   }
-  .about .project .right svg {
+  .project .right svg {
     position: absolute;
     right: -3%;
     top: 0;
     height: 100%;
     z-index: -1;
   }
-  .about .project .right .vp {
+  .project .right .vp {
     color: #fb8500;
     right: 5%;
   }
-  .about .project .right .description {
+  .project .right .description {
     display: block;
     position: absolute;
     top: 20%;
     right: 10%;
     width: 30%;
     margin: 0 auto;
-    text-align: justify;
+    text-align: left;
   }
-  .about .project .left {
+  .project .left {
     height: 60vh;
     position: relative;
   }
-  .about .project .left a {
+  .project .left a {
     margin-left: -5%;
     width: 75%;
   }
-  .about .project .left a img {
+  .project .left a img {
     position: relative;
     border-radius: 0;
     z-index: 10;
     margin-bottom: 3em;
   }
-  .about .project .left h4 {
+  .project .left h4 {
     text-align: left;
     margin-left: 11%;
     margin-bottom: 5%;
   }
-  .about .project .left h1 {
+  .project .left h1 {
     position: absolute;
     z-index: 20;
     top: 70%;
@@ -537,15 +595,15 @@ footer a {
     line-height: 1.1;
     letter-spacing: 0.1em;
   }
-  .about .project .left .vl {
+  .project .left .vl {
     height: 55%;
     top: 35%;
     left: 3.5em;
   }
-  .about .project .left .vp {
+  .project .left .vp {
     left: -0.5em;
   }
-  .about .project .svg-left {
+  .project .svg-left {
     position: absolute;
     left: -13%;
   }
@@ -610,6 +668,30 @@ footer a {
     margin: 0 auto;
     position: absolute;
     bottom: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 60%;
+    width: 100vw;
+    position: relative;
+  }
+  .content-right {
+    display: block;
+    width: 30%;
+    height: 120%;
+    background-color: #219ebc;
+  }
+  .content-right svg {
+    position: absolute;
+    z-index: 5;
+    height: 130%;
+    top: -30%;
     right: 0;
   }
 }

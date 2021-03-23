@@ -71,6 +71,7 @@ header {
 .hero {
   color: $dark-blue;
   display: flex;
+
   padding: 3em;
   padding-top: 0;
   justify-content: center;
@@ -225,6 +226,8 @@ h4 {
   justify-content: center;
   padding: 0.5em;
   margin-bottom: 1em;
+  position: relative;
+  z-index: 10;
 
   &-me {
     padding: 0 1em;
@@ -296,8 +299,6 @@ footer {
 @media only screen and (min-width: 800px) {
   .nav-container {
     display: flex;
-    overflow: hidden;
-    width: 100vw;
     height: 6em;
     position: relative;
   }
@@ -330,14 +331,33 @@ footer {
     }
   }
 
+  body {
+    position: relative;
+    .svg-social {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      position: absolute;
+      left: -7em;
+      top: 0;
+      z-index: 9;
+      overflow: hidden;
+      .svg-hero {
+        position: absolute;
+        height: 85%;
+        z-index: 9;
+        width: auto;
+      }
+    }
+  }
   .social-header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: auto;
-    width: 25%;
-    margin-left: 2em;
     background-color: $light-blue;
+    width: 34%;
+    position: relative;
 
     ul {
       display: flex;
@@ -357,36 +377,35 @@ footer {
   }
 
   .hero {
-    display: flex;
-    height: 60%;
+    display: block;
+    height: 50vh;
     width: 100vw;
     position: relative;
   }
 
   .content-right {
-    display: block;
-    width: 30%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
     background-color: $light-blue;
+    padding: 0;
 
-    svg {
-      position: absolute;
-      z-index: 5;
-      height: 120%;
-      top: -18%;
-      right: 0;
-    }
+    // svg {
+    //   position: absolute;
+    //   z-index: 5;
+    //   height: 120%;
+    //   top: -18%;
+    //   right: 0;
+    // }
   }
 
   .content-left {
-    width: 100%;
-    position: relative;
     display: flex;
+    width: 66%;
+    position: relative;
     justify-content: left;
-    align-items: center;
     .content {
-      text-align: justify;
       width: 60%;
+      text-align: justify;
       h1 {
         font-size: 2.5em;
         margin-left: 2.5em;
@@ -431,7 +450,7 @@ footer {
 
   .contact {
     position: relative;
-    z-index: 8;
+    z-index: 9;
     .contact-background {
       position: relative;
       z-index: 0;
@@ -461,7 +480,55 @@ footer {
     right: 1em;
   }
 
-  .about .project {
+  .dark-blue-div {
+    display: block;
+    width: 100%;
+    height: 20vh;
+    background-color: $dark-blue;
+  }
+  .about {
+    position: relative;
+    background-color: $light-blue;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .col {
+    display: inline-block;
+    width: 40%;
+    height: 50%;
+    text-align: center;
+    background-color: $light-blue;
+    margin: 1em auto;
+
+    img {
+      margin-top: -6em;
+      z-index: 10;
+      width: 50%;
+      padding: 0.5em;
+    }
+    h4 {
+      font-size: 0.9em;
+      margin-top: -0.5em;
+      color: $dark-blue;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 0.7em;
+      padding: 2em 4em;
+      width: 60%;
+      margin: 0 auto;
+      margin-top: -1.5em;
+      color: $yellow;
+      text-align: left;
+    }
+  }
+
+  .project {
     padding-bottom: 2em;
     position: relative;
 
@@ -485,7 +552,7 @@ footer {
         right: 10%;
         width: 30%;
         margin: 0 auto;
-        text-align: justify;
+        text-align: left;
       }
     }
 
@@ -600,5 +667,27 @@ footer {
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .hero {
+    display: flex;
+    height: 60%;
+    width: 100vw;
+    position: relative;
+  }
+  .content-right {
+    display: block;
+    width: 30%;
+    height: 120%;
+    background-color: $light-blue;
+
+    svg {
+      position: absolute;
+      z-index: 5;
+      height: 130%;
+      top: -30%;
+      right: 0;
+    }
   }
 }
