@@ -1,5 +1,5 @@
 //fonts
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap");
 
 //colors
 $dark-blue: #023047;
@@ -165,7 +165,7 @@ h4 {
   }
 
   p {
-    font-size: 0.7em;
+    font-size: 0.9em;
     padding: 1em 4em;
     margin-top: -1.5em;
     color: $light-blue;
@@ -194,18 +194,22 @@ h4 {
     justify-content: center;
     width: 100%;
     img {
-      width: 60%;
+      width: 80%;
       margin: 0 auto;
-      border-radius: 2em;
+      border-radius: 1em;
       -webkit-border-radius: 2em;
-      -moz-border-radius: 2em;
-      -ms-border-radius: 2em;
-      -o-border-radius: 2em;
+      -moz-border-radius: 1em;
+      -ms-border-radius: 1em;
+      -o-border-radius: 1em;
+      -webkit-border-radius: 1em;
     }
 
     h1 {
       margin-top: -0.5em;
       font-size: 1.5em;
+      br {
+        display: none;
+      }
     }
 
     h4 {
@@ -218,8 +222,9 @@ h4 {
 
   .right {
     .description {
-      font-size: 0.7em;
+      font-size: 0.8em;
       padding: 0 2em;
+      text-align: left;
     }
   }
 }
@@ -228,7 +233,7 @@ h4 {
   display: flex;
   justify-content: center;
   padding: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 2.5em;
   position: relative;
   z-index: 10;
 
@@ -239,12 +244,7 @@ h4 {
     font-size: 1em;
     font-weight: 800;
     overflow: hidden;
-    background: linear-gradient(
-      to right,
-      $orange,
-      $orange 50%,
-      $light-blue 50%
-    );
+    background: linear-gradient(to right, $orange, $orange 50%, $dark-blue 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -328,7 +328,7 @@ footer {
         margin-right: 9em;
         a {
           padding: 0 1em;
-          font-size: 0.8em;
+          font-size: 1em;
         }
       }
     }
@@ -380,25 +380,24 @@ footer {
   }
 
   .hero {
-    display: block;
-    height: 50vh;
+    display: flex;
+    height: 60%;
     width: 100vw;
     position: relative;
   }
-
   .content-right {
-    width: 100%;
-    height: 100%;
+    display: block;
+    width: 30%;
+    height: 120%;
     background-color: $light-blue;
-    padding: 0;
 
-    // svg {
-    //   position: absolute;
-    //   z-index: 5;
-    //   height: 120%;
-    //   top: -18%;
-    //   right: 0;
-    // }
+    svg {
+      position: absolute;
+      z-index: 5;
+      height: 130%;
+      top: -30%;
+      right: 0;
+    }
   }
 
   .content-left {
@@ -407,14 +406,15 @@ footer {
     position: relative;
     justify-content: left;
     .content {
-      width: 60%;
+      width: 70%;
       text-align: justify;
       h1 {
         font-size: 2.5em;
-        margin-left: 2.5em;
+        margin-left: 2em;
+        margin-top: 1em;
       }
       h4 {
-        margin-left: 6.2em;
+        margin-left: 5.1em;
       }
     }
   }
@@ -426,7 +426,7 @@ footer {
     height: 12em;
     z-index: 10;
     position: absolute;
-    left: 4em;
+    left: 3em;
     top: 35%;
   }
 
@@ -447,8 +447,8 @@ footer {
     -webkit-writing-mode: tb-rl;
     -ms-writing-mode: tb-rl;
     position: absolute;
-    top: 18%;
-    left: -0.4em;
+    top: 15%;
+    left: -0.7em;
   }
 
   .contact {
@@ -500,7 +500,7 @@ footer {
   }
 
   .col {
-    display: inline-block;
+    display: block;
     width: 40%;
     height: 50%;
     text-align: center;
@@ -514,19 +514,20 @@ footer {
       padding: 0.5em;
     }
     h4 {
-      font-size: 0.9em;
+      font-size: 1em;
       margin-top: -0.5em;
       color: $dark-blue;
       text-transform: uppercase;
     }
 
     p {
-      font-size: 0.7em;
+      font-size: 1.3vw;
+      font-weight: 300;
       padding: 2em 4em;
       width: 60%;
       margin: 0 auto;
       margin-top: -1.5em;
-      color: $yellow;
+      color: $white;
       text-align: left;
     }
   }
@@ -556,6 +557,8 @@ footer {
         width: 30%;
         margin: 0 auto;
         text-align: left;
+        font-size: 1.3vw;
+        font-weight: 300;
       }
     }
 
@@ -566,6 +569,7 @@ footer {
         margin-left: -5%;
         width: 75%;
         img {
+          width: 60%;
           position: relative;
           border-radius: 0;
           z-index: 10;
@@ -588,10 +592,13 @@ footer {
         text-align: right;
         line-height: 1.1;
         letter-spacing: 0.1em;
+        br {
+          display: inline;
+        }
       }
       .vl {
         height: 55%;
-        top: 35%;
+        top: 37%;
         left: 3.5em;
       }
 
@@ -672,25 +679,134 @@ footer {
     right: 0;
   }
 }
-@media only screen and (min-width: 800px) {
-  .hero {
-    display: flex;
-    height: 60%;
-    width: 100vw;
-    position: relative;
-  }
-  .content-right {
-    display: block;
-    width: 30%;
-    height: 120%;
-    background-color: $light-blue;
 
-    svg {
-      position: absolute;
-      z-index: 5;
-      height: 130%;
-      top: -30%;
-      right: 0;
+@media only screen and (min-width: 1000px) {
+  .content-left {
+    display: flex;
+    width: 66%;
+    position: relative;
+    justify-content: left;
+    .content {
+      width: 60%;
+      text-align: justify;
+      h1 {
+        font-size: 2.5em;
+        margin-top: 1em;
+        margin-left: 2.5em;
+      }
+      h4 {
+        margin-top: -1em;
+        margin-left: 6.2em;
+      }
     }
+  }
+
+  .project {
+    .left {
+      .vl {
+        height: 17em;
+        left: 4em;
+        top: 38%;
+      }
+    }
+  }
+  .button-down {
+    margin-top: 2em;
+  }
+
+  .vp {
+    top: 15%;
+    left: -0.4em;
+  }
+
+  .vl {
+    height: 12em;
+    left: 4em;
+    top: 35%;
+  }
+  .vl-contact {
+    color: $yellow;
+    top: 25%;
+    height: 23em;
+  }
+  .vp-contact {
+    color: $light-blue;
+    top: 7%;
+  }
+  .about {
+    height: 60vh;
+  }
+  .col {
+    p {
+      font-size: 0.9em;
+    }
+    padding-bottom: 1em;
+  }
+
+  .project {
+    .right {
+      .description {
+        font-size: 0.8em;
+      }
+    }
+    padding-bottom: 5em;
+
+    &-logistics {
+      margin-bottom: 4em;
+    }
+  }
+  footer {
+    height: 35%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .content-left {
+    .content {
+      width: 55%;
+
+      h1 {
+        font-size: 3.5em;
+        margin-top: 0.5em;
+        margin-left: 3.5em;
+      }
+      h4 {
+        margin-top: -1em;
+        margin-left: 12.3em;
+      }
+    }
+  }
+
+  .vl {
+    height: 18em;
+    left: 9em;
+    top: 25%;
+
+    &-contact {
+      height: 19em;
+      left: 4em;
+      top: 37%;
+    }
+  }
+
+  .button-down {
+    margin-top: 2em;
+    margin-left: 10em;
+  }
+
+  .vp {
+    top: 10%;
+    left: 1.3em;
+  }
+
+  .vl-contact {
+    color: $yellow;
+    top: 25%;
+    height: 27em;
+  }
+  .vp-contact {
+    color: $light-blue;
+    top: 7%;
+    left: -0.4em;
   }
 }

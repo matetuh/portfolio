@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap");
 body {
   height: 100vh;
   margin: 0;
@@ -169,7 +169,7 @@ h4 {
 }
 
 .col p {
-  font-size: 0.7em;
+  font-size: 0.9em;
   padding: 1em 4em;
   margin-top: -1.5em;
   color: #219ebc;
@@ -207,18 +207,23 @@ h4 {
 }
 
 .project .left img {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
-  border-radius: 2em;
+  border-radius: 1em;
   -webkit-border-radius: 2em;
-  -moz-border-radius: 2em;
-  -ms-border-radius: 2em;
-  -o-border-radius: 2em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  -webkit-border-radius: 1em;
 }
 
 .project .left h1 {
   margin-top: -0.5em;
   font-size: 1.5em;
+}
+
+.project .left h1 br {
+  display: none;
 }
 
 .project .left h4 {
@@ -229,8 +234,9 @@ h4 {
 }
 
 .project .right .description {
-  font-size: 0.7em;
+  font-size: 0.8em;
   padding: 0 2em;
+  text-align: left;
 }
 
 .hire {
@@ -241,7 +247,7 @@ h4 {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 2.5em;
   position: relative;
   z-index: 10;
 }
@@ -253,8 +259,8 @@ h4 {
   font-size: 1em;
   font-weight: 800;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(#fb8500), color-stop(50%, #fb8500), color-stop(50%, #219ebc));
-  background: linear-gradient(to right, #fb8500, #fb8500 50%, #219ebc 50%);
+  background: -webkit-gradient(linear, left top, right top, from(#fb8500), color-stop(50%, #fb8500), color-stop(50%, #023047));
+  background: linear-gradient(to right, #fb8500, #fb8500 50%, #023047 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -348,7 +354,7 @@ footer a {
   }
   header nav ul a {
     padding: 0 1em;
-    font-size: 0.8em;
+    font-size: 1em;
   }
   body {
     position: relative;
@@ -401,16 +407,25 @@ footer a {
     margin-top: -0.25em;
   }
   .hero {
-    display: block;
-    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 60%;
     width: 100vw;
     position: relative;
   }
   .content-right {
-    width: 100%;
-    height: 100%;
+    display: block;
+    width: 30%;
+    height: 120%;
     background-color: #219ebc;
-    padding: 0;
+  }
+  .content-right svg {
+    position: absolute;
+    z-index: 5;
+    height: 130%;
+    top: -30%;
+    right: 0;
   }
   .content-left {
     display: -webkit-box;
@@ -423,15 +438,16 @@ footer a {
             justify-content: left;
   }
   .content-left .content {
-    width: 60%;
+    width: 70%;
     text-align: justify;
   }
   .content-left .content h1 {
     font-size: 2.5em;
-    margin-left: 2.5em;
+    margin-left: 2em;
+    margin-top: 1em;
   }
   .content-left .content h4 {
-    margin-left: 6.2em;
+    margin-left: 5.1em;
   }
   .vl {
     display: block;
@@ -440,7 +456,7 @@ footer a {
     height: 12em;
     z-index: 10;
     position: absolute;
-    left: 4em;
+    left: 3em;
     top: 35%;
   }
   .button-down {
@@ -459,8 +475,8 @@ footer a {
     -webkit-writing-mode: tb-rl;
     -ms-writing-mode: tb-rl;
     position: absolute;
-    top: 18%;
-    left: -0.4em;
+    top: 15%;
+    left: -0.7em;
   }
   .contact {
     position: relative;
@@ -514,7 +530,7 @@ footer a {
             justify-content: center;
   }
   .col {
-    display: inline-block;
+    display: block;
     width: 40%;
     height: 50%;
     text-align: center;
@@ -528,18 +544,19 @@ footer a {
     padding: 0.5em;
   }
   .col h4 {
-    font-size: 0.9em;
+    font-size: 1em;
     margin-top: -0.5em;
     color: #023047;
     text-transform: uppercase;
   }
   .col p {
-    font-size: 0.7em;
+    font-size: 1.3vw;
+    font-weight: 300;
     padding: 2em 4em;
     width: 60%;
     margin: 0 auto;
     margin-top: -1.5em;
-    color: #ffff03;
+    color: #fff;
     text-align: left;
   }
   .project {
@@ -565,6 +582,8 @@ footer a {
     width: 30%;
     margin: 0 auto;
     text-align: left;
+    font-size: 1.3vw;
+    font-weight: 300;
   }
   .project .left {
     height: 60vh;
@@ -575,6 +594,7 @@ footer a {
     width: 75%;
   }
   .project .left a img {
+    width: 60%;
     position: relative;
     border-radius: 0;
     z-index: 10;
@@ -596,9 +616,12 @@ footer a {
     line-height: 1.1;
     letter-spacing: 0.1em;
   }
+  .project .left h1 br {
+    display: inline;
+  }
   .project .left .vl {
     height: 55%;
-    top: 35%;
+    top: 37%;
     left: 3.5em;
   }
   .project .left .vp {
@@ -673,27 +696,119 @@ footer a {
   }
 }
 
-@media only screen and (min-width: 800px) {
-  .hero {
+@media only screen and (min-width: 1000px) {
+  .content-left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 60%;
-    width: 100vw;
+    width: 66%;
     position: relative;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
-  .content-right {
-    display: block;
-    width: 30%;
-    height: 120%;
-    background-color: #219ebc;
+  .content-left .content {
+    width: 60%;
+    text-align: justify;
   }
-  .content-right svg {
-    position: absolute;
-    z-index: 5;
-    height: 130%;
-    top: -30%;
-    right: 0;
+  .content-left .content h1 {
+    font-size: 2.5em;
+    margin-top: 1em;
+    margin-left: 2.5em;
+  }
+  .content-left .content h4 {
+    margin-top: -1em;
+    margin-left: 6.2em;
+  }
+  .project .left .vl {
+    height: 17em;
+    left: 4em;
+    top: 38%;
+  }
+  .button-down {
+    margin-top: 2em;
+  }
+  .vp {
+    top: 15%;
+    left: -0.4em;
+  }
+  .vl {
+    height: 12em;
+    left: 4em;
+    top: 35%;
+  }
+  .vl-contact {
+    color: #ffff03;
+    top: 25%;
+    height: 23em;
+  }
+  .vp-contact {
+    color: #219ebc;
+    top: 7%;
+  }
+  .about {
+    height: 60vh;
+  }
+  .col {
+    padding-bottom: 1em;
+  }
+  .col p {
+    font-size: 0.9em;
+  }
+  .project {
+    padding-bottom: 5em;
+  }
+  .project .right .description {
+    font-size: 0.8em;
+  }
+  .project-logistics {
+    margin-bottom: 4em;
+  }
+  footer {
+    height: 35%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .content-left .content {
+    width: 55%;
+  }
+  .content-left .content h1 {
+    font-size: 3.5em;
+    margin-top: 0.5em;
+    margin-left: 3.5em;
+  }
+  .content-left .content h4 {
+    margin-top: -1em;
+    margin-left: 12.3em;
+  }
+  .vl {
+    height: 18em;
+    left: 9em;
+    top: 25%;
+  }
+  .vl-contact {
+    height: 19em;
+    left: 4em;
+    top: 37%;
+  }
+  .button-down {
+    margin-top: 2em;
+    margin-left: 10em;
+  }
+  .vp {
+    top: 10%;
+    left: 1.3em;
+  }
+  .vl-contact {
+    color: #ffff03;
+    top: 25%;
+    height: 27em;
+  }
+  .vp-contact {
+    color: #219ebc;
+    top: 7%;
+    left: -0.4em;
   }
 }
 /*# sourceMappingURL=style.css.map */
